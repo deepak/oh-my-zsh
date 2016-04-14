@@ -9,6 +9,9 @@ alias cbr="cargo build --release"
 alias ct="cargo test"
 alias cr="cargo run"
 
+# Add Cargo's global binaries to PATH
+export PATH=$PATH:~/.cargo/bin
+
 # aliases for rustc
 function rce() {
     if [[ -z $@ ]]; then
