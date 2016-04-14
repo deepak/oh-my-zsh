@@ -12,6 +12,10 @@ alias cr="cargo run"
 # Add Cargo's global binaries to PATH
 export PATH=$PATH:~/.cargo/bin
 
+# Needed by [racer](https://github.com/phildawes/racer)
+# test with, racer complete std::io::B (should show some completions)
+export RUST_SRC_PATH=/usr/local/var/rust/src/src
+
 # aliases for rustc
 function rce() {
     if [[ -z $@ ]]; then
